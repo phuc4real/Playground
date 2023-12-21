@@ -3,7 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Playground.Api", "src\Playground.Api\Playground.Api.csproj", "{A527BB6B-AE71-4058-B4F4-23E8716F6B67}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Playground.Api", "src\Playground.Api\Playground.Api.csproj", "{A527BB6B-AE71-4058-B4F4-23E8716F6B67}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateway", "Gateway", "{B31C14F8-A0BF-48A0-B4FC-115336DBD414}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Identity", "Identity", "{8C5A54A6-BB45-44DD-A2FE-797CBCB15D19}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{1EBC4EC6-53B1-45A1-A4EA-A6EB931D74E3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AppOne", "AppOne", "{B753BE48-FC78-4F89-A930-B4E074E17EF7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,6 +26,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A527BB6B-AE71-4058-B4F4-23E8716F6B67} = {B753BE48-FC78-4F89-A930-B4E074E17EF7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6B1301BA-82F4-40A6-955A-55B5233EC7FC}
