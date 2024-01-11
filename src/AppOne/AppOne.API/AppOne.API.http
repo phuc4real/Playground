@@ -1,0 +1,6 @@
+@AppOne.API_HostAddress = http://localhost:5268
+
+GET {{AppOne.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

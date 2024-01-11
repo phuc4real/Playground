@@ -1,4 +1,4 @@
-namespace Playground.Api
+namespace Playground.Identity
 {
     public class WeatherForecast
     {

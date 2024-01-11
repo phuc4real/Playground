@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace Playground.Api.Controllers
+namespace Playground.Identity.Controllers
 {
     [ApiController]
     [Route("[controller]")]

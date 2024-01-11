@@ -1,11 +1,5 @@
-using Playground.Api.Extensions;
-using Serilog;
-
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.ConfigureCors();
-builder.Services.ConfigureIISIntegration();
-builder.Host.ConfigureLogging(ServicesExtensions.ConfigureSerilog);
 // Add services to the container.
 
 builder.Services.AddControllers();
