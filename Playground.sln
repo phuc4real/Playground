@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateway", "Gateway", "{B31C14F8-A0BF-48A0-B4FC-115336DBD414}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Identity", "Identity", "{8C5A54A6-BB45-44DD-A2FE-797CBCB15D19}"
+	ProjectSection(SolutionItems) = preProject
+		src\Identity\Playground.Identity\appsettings.Development.json = src\Identity\Playground.Identity\appsettings.Development.json
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{1EBC4EC6-53B1-45A1-A4EA-A6EB931D74E3}"
 EndProject
@@ -28,7 +31,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Playground.Lib", "src\Share
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Playground.Gateway", "src\Gateway\Playground.Gateway\Playground.Gateway.csproj", "{39E0E0B7-14D1-468A-967A-FBDB5652F457}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Playground.Identity", "src\Identity\Playground.Identity\Playground.Identity.csproj", "{46733C5D-B267-4D42-B25B-FA1735D4FF57}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Playground.Identity", "src\Identity\Playground.Identity\Playground.Identity.csproj", "{46733C5D-B267-4D42-B25B-FA1735D4FF57}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
