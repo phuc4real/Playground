@@ -2,7 +2,7 @@
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Playground.Extension;
-public static class CorsExtension
+public static partial class ServicesExtension
 {
     public static void ConfigureCors(this IServiceCollection services)
     => services.AddCors(options =>
