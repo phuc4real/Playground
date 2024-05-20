@@ -11,7 +11,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{1EBC4E
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AppOne", "AppOne", "{B753BE48-FC78-4F89-A930-B4E074E17EF7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Playground.AppOne.API", "src\AppOne\AppOne.API\Playground.AppOne.API.csproj", "{43583184-E8F4-4CA6-BBF3-ECD952B5BA7D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Playground.AppOne.API", "src\Services\AppOne\AppOne.API\Playground.AppOne.API.csproj", "{43583184-E8F4-4CA6-BBF3-ECD952B5BA7D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E28F8D03-C8B4-40EF-9CEC-2764EAEE8E59}"
 	ProjectSection(SolutionItems) = preProject
@@ -26,15 +26,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Playground.Database", "src\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Playground.Lib", "src\Shared\Playground.Lib\Playground.Lib.csproj", "{48C12B38-3B6F-455B-AC8F-5DF5EB1265DC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Playground.Gateway", "src\Gateway\Playground.Gateway\Playground.Gateway.csproj", "{39E0E0B7-14D1-468A-967A-FBDB5652F457}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Playground.Gateway", "src\Gateway\Playground.Gateway.csproj", "{39E0E0B7-14D1-468A-967A-FBDB5652F457}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Identity.Api", "src\Identity\Identity.Api\Identity.Api.csproj", "{36D9BCFA-E34C-4FF9-9387-E08F097A6115}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Identity.Api", "src\Services\Identity\Identity.Api\Identity.Api.csproj", "{36D9BCFA-E34C-4FF9-9387-E08F097A6115}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Identity.Repository", "src\Identity\Identity.Repository\Identity.Repository.csproj", "{C4B693FE-809A-4A5E-9BF9-6F1EBF0DFB67}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Identity.Repository", "src\Services\Identity\Identity.Repository\Identity.Repository.csproj", "{C4B693FE-809A-4A5E-9BF9-6F1EBF0DFB67}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Identity.Service", "src\Identity\Identity.Service\Identity.Service.csproj", "{3A2BCA7B-4E6D-4D26-A3B2-C9FFD5C6A6E8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Identity.Service", "src\Services\Identity\Identity.Service\Identity.Service.csproj", "{3A2BCA7B-4E6D-4D26-A3B2-C9FFD5C6A6E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Identity.Model", "src\Identity\Identity.Model\Identity.Model.csproj", "{C852683A-203B-4C34-B23B-A4BDBC04DAC2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Identity.Model", "src\Services\Identity\Identity.Model\Identity.Model.csproj", "{C852683A-203B-4C34-B23B-A4BDBC04DAC2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{606202DC-A71E-4220-860D-E983729B8170}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +89,8 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{8C5A54A6-BB45-44DD-A2FE-797CBCB15D19} = {606202DC-A71E-4220-860D-E983729B8170}
+		{B753BE48-FC78-4F89-A930-B4E074E17EF7} = {606202DC-A71E-4220-860D-E983729B8170}
 		{43583184-E8F4-4CA6-BBF3-ECD952B5BA7D} = {B753BE48-FC78-4F89-A930-B4E074E17EF7}
 		{B98E1458-41DB-459A-B49A-CFB8A334071E} = {1EBC4EC6-53B1-45A1-A4EA-A6EB931D74E3}
 		{A3A0A635-1C60-492F-93E7-726BF3556FE0} = {1EBC4EC6-53B1-45A1-A4EA-A6EB931D74E3}

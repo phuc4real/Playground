@@ -12,7 +12,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\..\Shared\Playground.Extensions\Playground.Extension.csproj" />
+		<ProjectReference Include="..\..\..\Shared\Playground.Extensions\Playground.Extension.csproj" />
 		<ProjectReference Include="..\Identity.Repository\Identity.Repository.csproj" />
 	</ItemGroup>
 

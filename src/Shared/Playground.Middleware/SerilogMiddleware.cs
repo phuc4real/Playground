@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Serilog.Context;
-using Serilog;
 
 namespace Playground.Middleware;
 

@@ -1,8 +1,8 @@
+using Identity.Model;
+using Identity.Repository;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.OpenApi.Models;
 using Playground.Extension;
-using Identity.Repository;
-using Identity.Model;
 
 var builder = WebApplication.CreateBuilder(args);
 var configuration = builder.Configuration;
@@ -17,16 +17,10 @@ builder.Services.AddSwaggerGen(options =>
         Version = "v1",
         Title = "Playground Identity API",
         Description = "Identity Module",
-        TermsOfService = new Uri("https://example.com/terms"),
         Contact = new OpenApiContact
         {
-            Name = "Example Contact",
-            Url = new Uri("https://example.com/contact")
-        },
-        License = new OpenApiLicense
-        {
-            Name = "Example License",
-            Url = new Uri("https://example.com/license")
+            Name = "Github: phuc4real",
+            Url = new Uri("https://github.com/phuc4real")
         }
     });
 });
@@ -47,17 +41,12 @@ builder.Services.AddIdentityCore<AppUser>()
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-//if (app.Environment.IsDevelopment())
-//{
-//}
 app.MapGroup("identity")
    .WithTags("Identity")
    .MapIdentityApi<AppUser>();
 
 app.UseSwagger();
 app.UseSwaggerUI();
-
 
 app.UseSerilogMiddleware();
 

@@ -11,7 +11,9 @@ public static partial class ServicesExtension
         builder.UseSerilog((ctx, cfg) =>
         {
             cfg.ReadFrom.Configuration(ctx.Configuration)
-               .Enrich.WithEnvironmentName();
+               .Enrich.FromLogContext()
+               .Enrich.WithEnvironmentName()
+               .Enrich.WithProperty("ApplicationName", ctx.HostingEnvironment.ApplicationName);
         });
     }
 
