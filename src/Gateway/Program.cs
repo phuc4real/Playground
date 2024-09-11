@@ -1,7 +1,16 @@
+using Ocelot.DependencyInjection;
+using Ocelot.Provider.Polly;
+using Playground.Extension;
+
 var builder = WebApplication.CreateBuilder(args);
-
+var configuration = builder.Configuration;
 // Add services to the container.
-
+builder.Services.AddOcelot()
+                .AddPolly();
+builder.Services.AddSwaggerForOcelot(configuration);
+builder.Host.ConfigureLogging();
+builder.Services.AddCustomCors(configuration);
+builder.Services.AddSerilogMiddleware();
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -16,10 +25,16 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+app.UseSerilogMiddleware();
 
+app.UseHttpsRedirection();
+app.UseStaticFiles();
+app.UseRouting();
+app.UseWebSockets();
 app.UseAuthorization();
 
 app.MapControllers();
+
+app.UseRouting();
 
 app.Run();

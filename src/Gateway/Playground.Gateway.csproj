@@ -8,8 +8,23 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <_ContentIncludedByDefault Remove="ocelot.json" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="MMLib.SwaggerForOcelot" />
+    <PackageReference Include="Ocelot" />
+    <PackageReference Include="Ocelot.Provider.Polly" />
     <PackageReference Include="Swashbuckle.AspNetCore" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+    <Folder Include="Extensions\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Shared\Playground.Extensions\Playground.Extension.csproj" />
   </ItemGroup>
 
 </Project>
